@@ -1,0 +1,151 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: pink;
+}
+.header-below {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-logo-title {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.logo {
+  margin-right: 10px;
+  width: 50px; 
+  height: 50px;
+}
+
+.header-nav {
+  display: flex;
+  font-size: 1rem;
+  gap: 15px;
+}
+
+.header-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav li {
+  cursor: pointer;
+  color: blue;
+  padding: 10px;
+}
+
+.header-nav li:hover {
+  color: gray; 
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+
+
+.theme-menu {
+  position: relative;
+}
+
+.theme-button {
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 10px;
+  margin-left: 10px;
+  
+}
+
+.theme-dropdown {
+  position: absolute;
+  top: 40px;
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.theme-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.theme-dropdown li {
+  margin-bottom: 5px;
+}
+
+.theme-dropdown button {
+  background: none;
+  font-size: 1rem;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.skip-link {
+  display: block; 
+  padding: 10px 15px;
+  background-color: bisque; 
+  color: black; 
+  text-decoration: none; 
+  font-size: 1rem;
+}
+
+.skip-link:focus {
+  background-color: pink;
+}
+
+
+
+@media (max-width: 800px) {
+  .header-nav {
+    display: none;
+    padding: 1rem;
+   }
+  .header-nav.open {
+    display: block;
+    position: absolute;
+    margin-top: 60px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: lightpink;
+    
+  }
+
+  .header-nav ul {
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  .hamburger-menu {
+    display: block;
+    margin: 2rem;
+  }
+
+  .theme-button {
+    margin:0px;
+    margin-top: 30px;
+    margin-left: 60px;
+    
+  }
+
+  .theme-dropdown {
+    top: 60px;
+    margin-left: 50px;
+  }
+
+
+}
